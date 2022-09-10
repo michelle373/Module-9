@@ -12,3 +12,6 @@ for char in word:
     reverse_word = char + reverse_word
 
 print(reverse_word)
+
+#You can make the word in reverse using slice operator
+Reversed_word = word[::-1]
