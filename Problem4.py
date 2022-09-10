@@ -9,13 +9,22 @@ counter = 20
 tens = []
 vowel = []
 
+#You need a list of vowels for the converted character of the counter number to be compared with
+vowel_List = "aeiouAEIOU"
+
 while counter <= 70:
     if counter % 10 == 0:
         tens.append(counter)
+    
+    if chr(counter) in vowel_List: 
+        vowel.append(chr(counter))
+   
     counter = counter + 1
 
 print(tens)
+print(vowel)
 
+'''
 for i in tens:
     tens[0] = str('twenty')
     tens[1] = str('thirty')
@@ -27,4 +36,4 @@ for i in tens:
 for chr in tens:
     if chr == 'a' or chr == 'e' or chr == 'i' or chr == 'o' or chr == 'u':
         print(tens)
-
+'''
