@@ -9,3 +9,5 @@ y = 100
 while(sum(L) <= y):
     x = int(input('Enter a number: '))
     L.append(x)
+#Check the elements of L
+print("L = ", L)
